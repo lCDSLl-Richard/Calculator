@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body onload="loadResult()">
+
+    <div class="wrapper">
+        <div id="operator"></div>
+        <div id="result"></div>
+        <button class="btn" id="seven" onclick="addToOperand(this)">7</button>
+        <button class="btn" id="eight" onclick="addToOperand(this)">8</button>
+        <button class="btn" id="nine" onclick="addToOperand(this)">9</button>
+        <button class="btn special" id="mult" onclick="operation(this)">x</button>
+        <button class="btn" id="four" onclick="addToOperand(this)">4</button>
+        <button class="btn" id="five" onclick="addToOperand(this)">5</button>
+        <button class="btn" id="six" onclick="addToOperand(this)">6</button>
+        <button class="btn special" id="divide" onclick="operation(this)">÷</button>
+        <button class="btn" id="one" onclick="addToOperand(this)">1</button>
+        <button class="btn" id="two" onclick="addToOperand(this)">2</button>
+        <button class="btn" id="three" onclick="addToOperand(this)">3</button>
+        <button class="btn special" id="add" onclick="operation(this)">+</button>
+        <button class="btn" id="zero" onclick="addToOperand(this)">0</button>
+        <button class="btn" id="decimal" onclick="addToOperand(this)">.</button>
+        <button class="btn" id="delete" onclick="removeFromOperand()"><ion-icon name="backspace-outline"></ion-icon></button>
+        <button class="btn special" id="substract" onclick="operation(this)">-</button>
+        <button class="btn special" id="clear" onclick="clear()">AC</button>
+        <button class="btn special" id="equals" onclick="calculate()">=</button>
+        
+    </div>
+    
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

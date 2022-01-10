@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body{
+    background-color: #082032;
+    font-family: 'Source Code Pro', monospace;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    padding-top: 10em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 400px;
+    height: 300px;
+}
+
+#result{
+    grid-column: 2/5;
+    height: 50px;
+    color: white;
+    background-color: #2C394B;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+#operator{
+    height: 50px;
+    color: white;
+    background-color: #2C394B;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 10px;    
+    font-size: 25px;
+}
+
+#equals{
+    grid-column: 4/5;
+}
+
+.btn{
+    background-color: #334756;
+    color: white;
+    border-radius: 5px;
+    border-color: #082032;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.special{
+    background-color: #FF4C29;
+}
+
+.btn:active{
+    transform: translateY(3px);
+}
+
+.btn:hover{
+    background-color: #FF4C29;
+}
+
+.special:hover{
+    background-color: #334756;
+}
