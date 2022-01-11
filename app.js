@@ -51,7 +51,6 @@ function calculate(){
     operand1 = Number(operand1);
     operand2 = Number(operand2);
     if(operand2 === 0){
-        operand1 = '';
         return 0;
     }else{
         
